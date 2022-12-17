@@ -31,8 +31,8 @@ static const Rule rules[] = {
         /* class      instance    title       tags mask   switchtotag	    isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,           0, 			1,           -1 },
 	{ "firefox",  NULL,       NULL,       1 << 1,      1, 			0,           -1 },
-	{ "Telegram", NULL,	  NULL,	      0,           1,			1,            1 },
- 
+	{ "Telegram", NULL,	      NULL,	      0,           1,			1,            1 },
+    { "feh",      NULL,       NULL,       0,           1,           1,            1 }, 
 	
         
 };
