@@ -7,13 +7,13 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const Bool viewontag         = True;     /* Switch view on tag switch */
-static const char *fonts[]          = { "hack:size=12", "FontAwesome:size=11.5", };
-static const char dmenufont[]       = "hack:size=12";
+static const char *fonts[]          = { "hack:size=10", "FontAwesome:size=10.5", };
+static const char dmenufont[]       = "hack:size=10";
 static const char col_gray1[]       = "#2e3440";
 static const char col_gray2[]       = "#4c566a";
 static const char col_gray3[]       = "#d8dee9"; 
 static const char col_gray4[]       = "#e5e9f0"; 
-static const char col_nord[]        = "#434c5e";
+static const char col_nord[]        = "#434c5e"; /*#434c5e */
 static const char col_bor[]        = "#3b4252";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -22,7 +22,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "" };
+static const char *tags[] = { "", " ", " ","", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -32,7 +32,7 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,           0, 			1,           -1 },
 	{ "firefox",  NULL,       NULL,       1 << 1,      1, 			0,           -1 },
 	{ "Telegram", NULL,	      NULL,	      0,           1,			1,            1 },
-    { "feh",      NULL,       NULL,       0,           1,           1,            1 }, 
+    	{ "feh",      NULL,       NULL,       0,           1,           1,            1 }, 
 	
         
 };

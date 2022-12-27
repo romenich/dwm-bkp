@@ -22,7 +22,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
+static const char *tags[] = { "", " ", " ","", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -32,7 +32,7 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,           0, 			1,           -1 },
 	{ "firefox",  NULL,       NULL,       1 << 1,      1, 			0,           -1 },
 	{ "Telegram", NULL,	      NULL,	      0,           1,			1,            1 },
-    { "feh",      NULL,       NULL,       0,           1,           1,            1 }, 
+    	{ "feh",      NULL,       NULL,       0,           1,           1,            1 }, 
 	
         
 };
@@ -64,7 +64,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_nord, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "xfce4-terminal", NULL };
+static const char *termcmd[]  = { "st", NULL };
 static const char *browser1[] = { "firefox", NULL};
 static const char *browser2[] = { "chromium", NULL};
 static const char *filecmd[]  = { "thunar", NULL};
@@ -106,9 +106,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_4,                      3)
 	TAGKEYS(                        XK_5,                      4)
 	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
