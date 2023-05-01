@@ -31,8 +31,8 @@ static const Rule rules[] = {
         /* class      instance    title       tags mask   switchtotag	    isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,           0, 			1,           -1 },
 	{ "firefox",  NULL,       NULL,       1 << 1,      1, 			0,           -1 },
-	{ "Telegram", NULL,	      NULL,	      0,           1,			1,            1 },
-    	{ "feh",      NULL,       NULL,       0,           1,           1,            1 }, 
+	{ "Telegram", NULL,	      NULL,	      0,           0,			1,            1 },
+    	{ "feh",      NULL,       NULL,       0,           0,           0,            1 }, 
 	
         
 };
@@ -67,7 +67,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char *browser1[] = { "firefox", NULL};
 static const char *browser2[] = { "chromium", NULL};
-static const char *filecmd[]  = { "thunar", NULL};
+static const char *filecmd[]  = { "pcmanfm", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
